@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3448CEEA1BB4AD9D009FC33D /* ProgressDialogController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3448CEE91BB4AD9D009FC33D /* ProgressDialogController.xib */; settings = {ASSET_TAGS = (); }; };
+		3448CEEC1BB4ADB4009FC33D /* ProgressDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CEEB1BB4ADB4009FC33D /* ProgressDialog.swift */; settings = {ASSET_TAGS = (); }; };
 		34C04DED1BB43F0200203B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C04DEC1BB43F0200203B19 /* AppDelegate.swift */; };
 		34C04DEF1BB43F0200203B19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C04DEE1BB43F0200203B19 /* ViewController.swift */; };
 		34C04DF21BB43F0200203B19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C04DF01BB43F0200203B19 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3448CEE91BB4AD9D009FC33D /* ProgressDialogController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressDialogController.xib; sourceTree = "<group>"; };
+		3448CEEB1BB4ADB4009FC33D /* ProgressDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressDialog.swift; sourceTree = "<group>"; };
 		34C04DE91BB43F0200203B19 /* SwiftDialogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDialogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C04DEC1BB43F0200203B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34C04DEE1BB43F0200203B19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 				34C04DF81BB43F0200203B19 /* Info.plist */,
 				34C04E1A1BB43F7B00203B19 /* Dialog.swift */,
 				34C04E1F1BB4454E00203B19 /* LoadingDialog.swift */,
+				3448CEEB1BB4ADB4009FC33D /* ProgressDialog.swift */,
 			);
 			path = SwiftDialogs;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 		34C04E1C1BB4440000203B19 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3448CEE91BB4AD9D009FC33D /* ProgressDialogController.xib */,
 				34C04E211BB4462000203B19 /* LoadingDialogController.xib */,
 			);
 			name = Views;
@@ -247,6 +253,7 @@
 			files = (
 				34C04DF71BB43F0200203B19 /* LaunchScreen.storyboard in Resources */,
 				34C04DF41BB43F0200203B19 /* Assets.xcassets in Resources */,
+				3448CEEA1BB4AD9D009FC33D /* ProgressDialogController.xib in Resources */,
 				34C04E221BB4462000203B19 /* LoadingDialogController.xib in Resources */,
 				34C04DF21BB43F0200203B19 /* Main.storyboard in Resources */,
 			);
@@ -277,6 +284,7 @@
 				34C04E1B1BB43F7B00203B19 /* Dialog.swift in Sources */,
 				34C04DEF1BB43F0200203B19 /* ViewController.swift in Sources */,
 				34C04DED1BB43F0200203B19 /* AppDelegate.swift in Sources */,
+				3448CEEC1BB4ADB4009FC33D /* ProgressDialog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +511,7 @@
 				34C04E131BB43F0300203B19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34C04E141BB43F0300203B19 /* Build configuration list for PBXNativeTarget "SwiftDialogsTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +520,7 @@
 				34C04E161BB43F0300203B19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34C04E171BB43F0300203B19 /* Build configuration list for PBXNativeTarget "SwiftDialogsUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +529,7 @@
 				34C04E191BB43F0300203B19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
