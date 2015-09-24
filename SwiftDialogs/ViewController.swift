@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func launchLoadingDialog(sender: AnyObject) {
+        let loadingDialog = LoadingDialog(title: "Loading...")
+        loadingDialog.presentFromView(self.view)
+    }
 
 }
 

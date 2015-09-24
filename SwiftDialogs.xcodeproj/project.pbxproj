@@ -14,6 +14,9 @@
 		34C04DF71BB43F0200203B19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C04DF51BB43F0200203B19 /* LaunchScreen.storyboard */; };
 		34C04E021BB43F0200203B19 /* SwiftDialogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C04E011BB43F0200203B19 /* SwiftDialogsTests.swift */; };
 		34C04E0D1BB43F0200203B19 /* SwiftDialogsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C04E0C1BB43F0200203B19 /* SwiftDialogsUITests.swift */; };
+		34C04E1B1BB43F7B00203B19 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C04E1A1BB43F7B00203B19 /* Dialog.swift */; settings = {ASSET_TAGS = (); }; };
+		34C04E201BB4454E00203B19 /* LoadingDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C04E1F1BB4454E00203B19 /* LoadingDialog.swift */; settings = {ASSET_TAGS = (); }; };
+		34C04E221BB4462000203B19 /* LoadingDialogController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34C04E211BB4462000203B19 /* LoadingDialogController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		34C04E081BB43F0200203B19 /* SwiftDialogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDialogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C04E0C1BB43F0200203B19 /* SwiftDialogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDialogsUITests.swift; sourceTree = "<group>"; };
 		34C04E0E1BB43F0200203B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34C04E1A1BB43F7B00203B19 /* Dialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
+		34C04E1F1BB4454E00203B19 /* LoadingDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingDialog.swift; sourceTree = "<group>"; };
+		34C04E211BB4462000203B19 /* LoadingDialogController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingDialogController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,15 @@
 		34C04DEB1BB43F0200203B19 /* SwiftDialogs */ = {
 			isa = PBXGroup;
 			children = (
+				34C04E1C1BB4440000203B19 /* Views */,
 				34C04DEC1BB43F0200203B19 /* AppDelegate.swift */,
 				34C04DEE1BB43F0200203B19 /* ViewController.swift */,
 				34C04DF01BB43F0200203B19 /* Main.storyboard */,
 				34C04DF31BB43F0200203B19 /* Assets.xcassets */,
 				34C04DF51BB43F0200203B19 /* LaunchScreen.storyboard */,
 				34C04DF81BB43F0200203B19 /* Info.plist */,
+				34C04E1A1BB43F7B00203B19 /* Dialog.swift */,
+				34C04E1F1BB4454E00203B19 /* LoadingDialog.swift */,
 			);
 			path = SwiftDialogs;
 			sourceTree = "<group>";
@@ -123,6 +132,14 @@
 				34C04E0E1BB43F0200203B19 /* Info.plist */,
 			);
 			path = SwiftDialogsUITests;
+			sourceTree = "<group>";
+		};
+		34C04E1C1BB4440000203B19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34C04E211BB4462000203B19 /* LoadingDialogController.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +247,7 @@
 			files = (
 				34C04DF71BB43F0200203B19 /* LaunchScreen.storyboard in Resources */,
 				34C04DF41BB43F0200203B19 /* Assets.xcassets in Resources */,
+				34C04E221BB4462000203B19 /* LoadingDialogController.xib in Resources */,
 				34C04DF21BB43F0200203B19 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34C04E201BB4454E00203B19 /* LoadingDialog.swift in Sources */,
+				34C04E1B1BB43F7B00203B19 /* Dialog.swift in Sources */,
 				34C04DEF1BB43F0200203B19 /* ViewController.swift in Sources */,
 				34C04DED1BB43F0200203B19 /* AppDelegate.swift in Sources */,
 			);
