@@ -11,4 +11,4 @@ Shows a title and an indeterminate spinner to indicate a background process is r
 
 #### Progress Dialog
 Shows a title and a progress bar that can be updated to show progress on a task of known size.
-![Alt text](/../screenshots/screenshots/progress.png?raw=true "Progress Dialog Example")
+<img src="/../screenshots/screenshots/progress.png?raw=true" width="248">
