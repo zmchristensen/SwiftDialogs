@@ -7,7 +7,7 @@ Each different dialog is dependent on the `Dialog` parent class, as well as the 
 ## Current Dialogs
 #### Loading Dialog
 Shows a title and an indeterminate spinner to indicate a background process is running.
-![Alt text](/../screenshots/screenshots/loading.png?raw=true "Loading Dialog Example")
+<img src="/../screenshots/screenshots/loading.png?raw=true" width="248">
 
 #### Progress Dialog
 Shows a title and a progress bar that can be updated to show progress on a task of known size.
