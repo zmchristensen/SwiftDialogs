@@ -13,11 +13,15 @@ class ViewController: UIViewController {
     let TIME_INTERVAL = NSTimeInterval(3)
     var timer: NSTimer!
     var progressCounter: Int!
-    
+        
+    @IBOutlet weak var progressButton: UIButton!
+    @IBOutlet weak var loadingButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        borderAndRoundButton(self.progressButton)
+        borderAndRoundButton(self.loadingButton)
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +45,14 @@ class ViewController: UIViewController {
         dismissAfterDelay(progressDialog, interval: UInt64(self.TIME_INTERVAL))
     }
     
+    
+    // Utility func to border and round buttons
+    func borderAndRoundButton(button: UIButton) {
+        button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        button.layer.borderColor = UIColor.accentColor().CGColor
+        button.layer.borderWidth = 1
+        button.layer.cornerRadius = 5
+    }
     
     // Utility func to remove the dialog after time interval
     func dismissAfterDelay(dialog: Dialog, interval: UInt64) {

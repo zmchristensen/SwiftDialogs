@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3448CEEA1BB4AD9D009FC33D /* ProgressDialogController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3448CEE91BB4AD9D009FC33D /* ProgressDialogController.xib */; settings = {ASSET_TAGS = (); }; };
 		3448CEEC1BB4ADB4009FC33D /* ProgressDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CEEB1BB4ADB4009FC33D /* ProgressDialog.swift */; settings = {ASSET_TAGS = (); }; };
+		3448CEEE1BB4C3C3009FC33D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CEED1BB4C3C3009FC33D /* UIColorExtension.swift */; settings = {ASSET_TAGS = (); }; };
 		34C04DED1BB43F0200203B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C04DEC1BB43F0200203B19 /* AppDelegate.swift */; };
 		34C04DEF1BB43F0200203B19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C04DEE1BB43F0200203B19 /* ViewController.swift */; };
 		34C04DF21BB43F0200203B19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C04DF01BB43F0200203B19 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		3448CEE91BB4AD9D009FC33D /* ProgressDialogController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressDialogController.xib; sourceTree = "<group>"; };
 		3448CEEB1BB4ADB4009FC33D /* ProgressDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressDialog.swift; sourceTree = "<group>"; };
+		3448CEED1BB4C3C3009FC33D /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		34C04DE91BB43F0200203B19 /* SwiftDialogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDialogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C04DEC1BB43F0200203B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34C04DEE1BB43F0200203B19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				34C04E1A1BB43F7B00203B19 /* Dialog.swift */,
 				34C04E1F1BB4454E00203B19 /* LoadingDialog.swift */,
 				3448CEEB1BB4ADB4009FC33D /* ProgressDialog.swift */,
+				3448CEED1BB4C3C3009FC33D /* UIColorExtension.swift */,
 			);
 			path = SwiftDialogs;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				34C04DEF1BB43F0200203B19 /* ViewController.swift in Sources */,
 				34C04DED1BB43F0200203B19 /* AppDelegate.swift in Sources */,
 				3448CEEC1BB4ADB4009FC33D /* ProgressDialog.swift in Sources */,
+				3448CEEE1BB4C3C3009FC33D /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

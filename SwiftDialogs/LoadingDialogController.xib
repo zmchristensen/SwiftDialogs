@@ -27,6 +27,7 @@
                         </label>
                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="EFM-TM-hhs">
                             <rect key="frame" x="110" y="68" width="20" height="20"/>
+                            <color key="color" red="0.10980392160000001" green="0.85490196080000003" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                         </activityIndicatorView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

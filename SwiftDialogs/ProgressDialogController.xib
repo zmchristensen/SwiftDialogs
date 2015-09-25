@@ -21,13 +21,14 @@
                     <rect key="frame" x="180" y="150" width="240" height="94"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekc-C2-W0v">
-                            <rect key="frame" x="106" y="24" width="29" height="21"/>
+                            <rect key="frame" x="106" y="24" width="29" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="V5P-hB-DLG">
-                            <rect key="frame" x="24" y="69" width="192" height="2"/>
+                            <rect key="frame" x="24" y="68.5" width="192" height="2"/>
+                            <color key="tintColor" red="0.10980392160000001" green="0.85490196080000003" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                         </progressView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

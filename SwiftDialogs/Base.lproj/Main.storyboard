@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,38 +17,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ata-gG-jnY">
-                                <rect key="frame" x="222" y="52" width="156" height="30"/>
-                                <state key="normal" title="Launch Loading Dialog"/>
-                                <connections>
-                                    <action selector="launchLoadingDialog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R6M-J4-u5N"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muf-rA-HZp">
-                                <rect key="frame" x="219" y="90" width="163" height="30"/>
-                                <state key="normal" title="Launch Progress Dialog"/>
-                                <connections>
-                                    <action selector="launchProgressDialog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zML-D3-GvZ"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift Dialog Examples" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Ctc-du-kKQ">
+                                <rect key="frame" x="20" y="28" width="560" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WsV-l1-Xst">
+                                <rect key="frame" x="20" y="258" width="560" height="84"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muf-rA-HZp">
+                                        <rect key="frame" x="205" y="8" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Fx1-pN-VBH"/>
+                                            <constraint firstAttribute="height" constant="30" id="k8J-F8-Tbz"/>
+                                        </constraints>
+                                        <state key="normal" title="Progress Dialog">
+                                            <color key="titleColor" red="0.10980392156862745" green="0.85490196078431369" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="launchProgressDialog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zML-D3-GvZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ata-gG-jnY">
+                                        <rect key="frame" x="205" y="46" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="R8M-8k-nbD"/>
+                                            <constraint firstAttribute="width" constant="150" id="dPn-fg-5ir"/>
+                                        </constraints>
+                                        <state key="normal" title="Loading Dialog">
+                                            <color key="titleColor" red="0.10980392160000001" green="0.85490196080000003" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="launchLoadingDialog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R6M-J4-u5N"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ata-gG-jnY" firstAttribute="centerX" secondItem="WsV-l1-Xst" secondAttribute="centerX" id="4uz-Tt-Z3C"/>
+                                    <constraint firstAttribute="height" constant="84" id="68F-Ma-dHK"/>
+                                    <constraint firstItem="Ata-gG-jnY" firstAttribute="top" secondItem="muf-rA-HZp" secondAttribute="bottom" constant="8" id="6xc-Fy-bs3"/>
+                                    <constraint firstItem="muf-rA-HZp" firstAttribute="centerX" secondItem="WsV-l1-Xst" secondAttribute="centerX" id="LZP-I0-KLp"/>
+                                    <constraint firstItem="Ata-gG-jnY" firstAttribute="top" secondItem="muf-rA-HZp" secondAttribute="bottom" constant="8" symbolic="YES" id="QwT-us-Fra"/>
+                                    <constraint firstAttribute="width" constant="240" id="xbc-mx-sdi"/>
+                                    <constraint firstItem="muf-rA-HZp" firstAttribute="top" secondItem="WsV-l1-Xst" secondAttribute="top" constant="8" id="zsq-Kc-Sdm"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="xbc-mx-sdi"/>
+                                        <exclude reference="QwT-us-Fra"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Ata-gG-jnY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5Tk-of-Mq9"/>
-                            <constraint firstItem="Ata-gG-jnY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="AeP-5C-fxf"/>
-                            <constraint firstItem="Ata-gG-jnY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jm6-VG-bOc"/>
-                            <constraint firstItem="muf-rA-HZp" firstAttribute="top" secondItem="Ata-gG-jnY" secondAttribute="bottom" constant="8" id="JyV-13-5R9"/>
-                            <constraint firstItem="muf-rA-HZp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fKU-Y9-f0k"/>
+                            <constraint firstItem="WsV-l1-Xst" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6PJ-ON-9lr"/>
+                            <constraint firstItem="Ctc-du-kKQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="AQS-CE-h9Z"/>
+                            <constraint firstItem="WsV-l1-Xst" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bsy-nl-Qnd"/>
+                            <constraint firstItem="WsV-l1-Xst" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TdT-U3-gW6"/>
+                            <constraint firstItem="WsV-l1-Xst" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g3t-iC-pZ2"/>
+                            <constraint firstItem="Ctc-du-kKQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="o2W-YM-lZa"/>
+                            <constraint firstItem="Ctc-du-kKQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="u1w-dF-6jT"/>
+                            <constraint firstItem="WsV-l1-Xst" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vHv-jj-KWi"/>
+                            <constraint firstItem="Ctc-du-kKQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yUH-Yq-l69"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="5Tk-of-Mq9"/>
+                                <exclude reference="yUH-Yq-l69"/>
+                                <exclude reference="Bsy-nl-Qnd"/>
+                                <exclude reference="g3t-iC-pZ2"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="loadingButton" destination="Ata-gG-jnY" id="6T4-Lk-rAH"/>
+                        <outlet property="progressButton" destination="muf-rA-HZp" id="v9i-pz-3sY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="575" y="304"/>
         </scene>
     </scenes>
 </document>
